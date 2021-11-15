@@ -162,18 +162,16 @@
             }
             .hamburger{
                 display: flex;
-                transition: 0.5s ease-in-out;
             }
             .hamburger.rotate{
                 transform: rotate(360deg);
-                transition: 0.5s ease-in;
+                transition: 0.5s ease;
                 span.bar:first-child{
                     transform: rotate(-45deg) translate(7px,-7px);
                     transition: 0.5s ease-in;
                 }
                 span.bar:nth-child(2){
                     opacity: 0;
-                    transform: translateX(20px);
                     transition: 0.5s ease-in;
                 }
                 span.bar:last-child{
@@ -242,15 +240,20 @@
                         height: 100%;
                         img{
                             height: 100%;
+                            object-fit: cover;
+                            display: block;
                         }
                         .text__slider{
                             width: 100%;
-                            bottom: 15%;
+                            bottom: 20%;
                             h1{
                                 font-size: 25px;
                             }
                         }
                     }
+                }
+                .swiper-pagination{
+                    bottom: 90px;
                 }
             }
         }

@@ -154,14 +154,12 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-transition: 0.5s ease-in-out;
-    transition: 0.5s ease-in-out;
   }
   .container header.header .hamburger.rotate {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
-    -webkit-transition: 0.5s ease-in;
-    transition: 0.5s ease-in;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
   }
   .container header.header .hamburger.rotate span.bar:first-child {
     -webkit-transform: rotate(-45deg) translate(7px, -7px);
@@ -171,8 +169,6 @@
   }
   .container header.header .hamburger.rotate span.bar:nth-child(2) {
     opacity: 0;
-    -webkit-transform: translateX(20px);
-            transform: translateX(20px);
     -webkit-transition: 0.5s ease-in;
     transition: 0.5s ease-in;
   }
@@ -247,13 +243,19 @@
   }
   .container .slider .container__slider .frame__slider .box__slider img {
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
   }
   .container .slider .container__slider .frame__slider .box__slider .text__slider {
     width: 100%;
-    bottom: 15%;
+    bottom: 20%;
   }
   .container .slider .container__slider .frame__slider .box__slider .text__slider h1 {
     font-size: 25px;
+  }
+  .container .slider .container__slider .swiper-pagination {
+    bottom: 90px;
   }
   .container .articel {
     padding: 100px 10px;
