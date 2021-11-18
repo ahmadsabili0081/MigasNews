@@ -27,6 +27,7 @@ $fontFamily : 'Open Sans', sans-serif;
         background-color: var(--header-bg);
         z-index: 300;
         transition: 0.5s;
+        cursor: pointer;
         i{
             font-size: 20px;
         }

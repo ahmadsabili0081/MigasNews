@@ -38,6 +38,7 @@
   z-index: 300;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .container .btn i {
