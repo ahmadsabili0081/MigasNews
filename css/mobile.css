@@ -109,21 +109,38 @@
   .container .articel .container__articel .row__articel .box__articel-right .row__articel__right .box__articel__right__news .text__articel__right h3 {
     font-size: 17px;
   }
-  .container .info-video {
-    padding: 50px 10px;
+  .container section.jabanusa__video {
+    padding: 100px 10px;
   }
-  .container .info-video .container__info__video {
+  .container section.jabanusa__video .container__jabanusa__video {
     width: 100%;
   }
-  .container .info-video .container__info__video .row__info__video .box__info__video {
+  .container section.jabanusa__video .container__jabanusa__video .row__jabanusa__video .box__jabanusa__video {
     width: 100%;
   }
-  .container .info-video .container__info__video .row__webinar__info .box__webinar__info {
+  .container section.webinar__jurnalistik {
+    padding: 100px 10px;
+  }
+  .container section.webinar__jurnalistik .container__webinar__jurnalistik {
     width: 100%;
   }
-  .container .info-video .container__info__video .row-digital-info {
+  .container section.webinar__jurnalistik .container__webinar__jurnalistik .row__webinar__jurnalistik {
     width: 100%;
-    overflow: hidden;
+  }
+  .container section.perpustakaan__digital {
+    padding: 100px 10px;
+  }
+  .container section.perpustakaan__digital .container__perpustakaan__digital {
+    width: 100%;
+  }
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital .box__perpustakaan__digital {
+    width: 100%;
+  }
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital .box__perpustakaan__digital .box__perpustakaan__digital__inside {
+    width: 100%;
+  }
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital .box__perpustakaan__digital .box__perpustakaan__digital__inside .text__perpustakaan__digital {
+    width: 50%;
   }
 }
 
@@ -300,68 +317,58 @@
   .container .articel .container__articel button.articel__more {
     margin: -50px auto;
   }
-  .container .info-video {
+  .container section.jabanusa__video {
     padding: 50px 10px;
   }
-  .container .info-video .container__info__video {
+  .container section.jabanusa__video .container__jabanusa__video {
     width: 100%;
   }
-  .container .info-video .container__info__video h1::after {
-    left: 35%;
-  }
-  .container .info-video .container__info__video .row__info__video {
-    margin-top: 10%;
-  }
-  .container .info-video .container__info__video .row__info__video .box__info__video {
+  .container section.jabanusa__video .container__jabanusa__video .row__jabanusa__video .box__jabanusa__video {
     width: 100%;
   }
-  .container .info-video .container__info__video .row__webinar__info {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .container section.webinar__jurnalistik {
+    padding: 50px 10px;
   }
-  .container .info-video .container__info__video .row__webinar__info .box__webinar__info {
+  .container section.webinar__jurnalistik .container__webinar__jurnalistik {
     width: 100%;
   }
-  .container .info-video .container__info__video .row__webinar__info .box__webinar__info h1::after {
-    left: 35%;
-  }
-  .container .info-video .container__info__video .row__webinar__info .box__webinar__info .box__webinar__info__flex {
+  .container section.webinar__jurnalistik .container__webinar__jurnalistik .row__webinar__jurnalistik {
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .container .info-video .container__info__video .row__webinar__info .box__webinar__info .box__webinar__info__flex .text__webinar__info {
+  .container section.webinar__jurnalistik .container__webinar__jurnalistik .row__webinar__jurnalistik .box__webinar__jurnalistik {
     width: 100%;
-    margin-top: 15%;
+    margin-top: 5%;
   }
-  .container .info-video .container__info__video .row__webinar__info .box__webinar__info .box__webinar__info__flex .box__webinar__info__flex__1 {
+  .container section.perpustakaan__digital {
+    padding: 50px 10px;
+  }
+  .container section.perpustakaan__digital .container__perpustakaan__digital {
     width: 100%;
   }
-  .container .info-video .container__info__video .row-digital-info h1 {
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital {
     margin-top: 10%;
   }
-  .container .info-video .container__info__video .row-digital-info .box__digital__info {
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital .box__perpustakaan__digital {
+    width: 100%;
+  }
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital .box__perpustakaan__digital .box__perpustakaan__digital__inside {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
     width: 100%;
   }
-  .container .info-video .container__info__video .row-digital-info .box__digital__info img {
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital .box__perpustakaan__digital .box__perpustakaan__digital__inside .text__perpustakaan__digital {
+    width: 100%;
+  }
+  .container section.perpustakaan__digital .container__perpustakaan__digital .row__perpustakaan__digital .box__perpustakaan__digital .box__perpustakaan__digital__inside img {
+    width: 100%;
     display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-  }
-  .container .info-video .container__info__video .row-digital-info .box__digital__info .text__digital__info {
-    width: 100%;
-  }
-  .container .info-video .container__info__video .row-digital-info .box__digital__info .text__digital__info button.digital__info {
-    margin: 20px 0px;
+    margin-top: 5%;
   }
 }
 /*# sourceMappingURL=mobile.css.map */

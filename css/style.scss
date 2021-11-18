@@ -97,10 +97,13 @@ $fontFamily : 'Open Sans', sans-serif;
                 list-style-type: none;
                 li.list__item{
                     font-family: $fontFamily;
+                    }
                     a.list__link{
                         text-decoration: none;
                         color: #8D9D2D;
                     }
+                    a.active{
+                        color: var(--header-text);
                 }
                 li.list__item::after{
                     content: ' ';
@@ -288,123 +291,149 @@ $fontFamily : 'Open Sans', sans-serif;
             }
         }
     }
-    .info-video{
+    section.jabanusa__video{
         position: relative;
-        padding: 50px 0px;
-        .container__info__video{
+        padding:100px 0px;
+        .container__jabanusa__video{
             max-width: 1200px;
             margin: 0px auto;
             h1{
-                font-family: $fontFamily;
-                text-align: center;
                 position: relative;
-                color: #333333;
+                text-align: center;
+                font-family: $fontFamily;
+                margin-bottom: 50px;
             }
             h1::after{
                 content: ' ';
-                display: block;
-                width: 100px;
-                height: 3px;
                 position: absolute;
-                left: 45%;
-                margin-top: 10px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 100px;
+                margin-top: 5px;
                 background-color: var(--line-articel);
+                height: 3px;
+                display: block;
             }
-            .row__info__video{
+            .row__jabanusa__video{
                 display: flex;
-                margin-top: 5%;
                 justify-content: center;
                 align-items: center;
-                flex-direction: column;
-                .box__info__video{
+                .box__jabanusa__video{
                     width: 800px;
-                    height: auto;
                     img{
+                        display: block;
+                        object-fit: contain;
                         width: 100%;
                     }
                 }
             }
-            .row__webinar__info{
+        }
+    }
+    section.webinar__jurnalistik{
+        padding: 100px 0px;
+        position: relative;
+        h1{
+            font-family: $fontFamily;
+            text-align: center;
+            position: relative;
+        }
+        h1::after{
+            content: ' ';
+            display:block;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            background-color: var(--line-articel);
+            height: 3px;
+        }
+        .container__webinar__jurnalistik{
+            max-width: 1200px;
+            margin: 0px auto;
+            .row__webinar__jurnalistik{
+                width: 800px;
                 display: flex;
-                justify-content: center;
+                margin: 30px auto;
+                justify-content: space-between;
                 align-items: center;
-                .box__webinar__info{
-                    width: 800px;
-                    height: auto;
-                    margin-top: 10%;
-                    h1::after{
-                        left: 42%;
+                .box__webinar__jurnalistik__text{
+                    width: 300px;
+                    margin: 0px 20px;
+                    span{
+                        font-family: $fontFamily;
+                        font-size: 25px;
+                        text-align: center;
+                        display: block;
                     }
-                    .box__webinar__info__flex{
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        .text__webinar__info{
-                            margin-top: 5%;
-                            max-width: 300px;
-                            font-size: 20px;
-                            font-family: $fontFamily;
-                            text-align: center;
-                            color: var(--header-text);
-                            font-weight: 600;
-                            span{
-                                text-transform: uppercase;
-                                line-height: 1.5;
-                            }
-                            button.webinar__info{
-                                display: block;
-                                padding: 10px 30px;
-                                font-family: $fontFamily;
-                                border: 1px solid #1D2A40;
-                                outline: none;
-                                margin: 20px auto;
-                                background-color: var(--banner-text-slider);
-                                cursor: pointer;
-                                font-weight: 800;
-                            }
-                        }
-                        .box__webinar__info__flex__1{
-                            width: 500px;
-                            height: 350px;
-                            background-color: var(--header-bg);
-                            margin-top: 5%;
-                        }
+                    button.daftar__disini{
+                        display: block;
+                        padding: 13px 40px;
+                        font-family: $fontFamily;
+                        border: 1px solid #1D2A40;
+                        outline: none;
+                        margin: 20px auto;
+                        color: #1D2A40;
+                        cursor: pointer;
+                        font-weight: bold;
+                        background-color: unset;
                     }
+                }
+                .box__webinar__jurnalistik{
+                    width: 600px;
+                    background-color: var(--header-bg);
+                    height: 350px;
                 }
             }
-            .row-digital-info{
-                display: flex;
-                justify-content: center;
-                flex-direction: column;
-                align-items: center;
-                h1{
-                    margin-top: 5%;
-                }
-                h1::after{
-                    left: 30%;
-                }
-                .box__digital__info{
+        }
+    }
+    section.perpustakaan__digital{
+        position: relative;
+        padding: 150px 0px;
+        .container__perpustakaan__digital{
+            max-width: 1200px;
+            margin: 0px auto;
+            h1{
+                position: relative;
+                text-align: center;
+                font-family: $fontFamily;
+            }
+            h1::after{
+                display: block;
+                content: ' ';
+                width: 100px;
+                position: absolute;
+                left: 50%;
+                background-color: var(--line-articel);
+                transform: translateX(-50%);
+                height: 3px;
+
+            }
+            .row__perpustakaan__digital{
+                margin-top: 5%;
+                .box__perpustakaan__digital{
+                    width: 100%;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: center;
                     align-items: center;
-                    margin-top: 5%;
-                    .text__digital__info{
-                        width: 400px;
-                        height: 200px;
-                        margin: 30px;
-                        font-family: $fontFamily;
-                        button.digital__info{
-                            display: block;
-                            padding: 12px 30px;
+                    .box__perpustakaan__digital__inside{
+                        width: 800px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-start;
+                        .text__perpustakaan__digital{
+                            width: 400px;
                             font-family: $fontFamily;
-                            border: 1px solid #1D2A40;
-                            outline: none;
-                            color: #1D2A40;
-                            margin: 60px 0px;
-                            letter-spacing: 1.2px;
-                            font-weight: 800;
-                            background-color: var(--banner-text-slider);
-                            cursor: pointer;
+                            button.btn__perpustakaan__digital{
+                                display: block;
+                                margin: 20px 0px;
+                                border: 1px solid #1D2A40;
+                                font-family: $fontFamily;
+                                padding: 12px 40px;
+                                color: #1D2A40;
+                                background-color: unset;
+                                cursor: pointer;
+                                font-weight: bold;
+                            }
                         }
                     }
                 }

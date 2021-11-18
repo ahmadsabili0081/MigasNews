@@ -117,23 +117,40 @@
                 }
             }
         }
-        .info-video{
-            padding: 50px 10px;
-            .container__info__video{
+        section.jabanusa__video{
+            padding: 100px 10px;
+            .container__jabanusa__video{
                 width: 100%;
-                .row__info__video{
-                    .box__info__video{
+                .row__jabanusa__video{
+                    .box__jabanusa__video{
                         width: 100%;
                     }
                 }
-                .row__webinar__info{
-                    .box__webinar__info{
-                        width: 100%;
-                    }
-                }
-                .row-digital-info{
+            }
+        }
+        section.webinar__jurnalistik{
+            padding: 100px 10px;
+            .container__webinar__jurnalistik{
+                width: 100%;
+                .row__webinar__jurnalistik{
                     width: 100%;
-                    overflow: hidden;
+                }
+            }
+        }
+        section.perpustakaan__digital{
+            padding: 100px 10px;
+            .container__perpustakaan__digital{
+                width: 100%;
+                .row__perpustakaan__digital{
+                    .box__perpustakaan__digital{
+                        width: 100%;
+                        .box__perpustakaan__digital__inside{
+                            width: 100%;
+                            .text__perpustakaan__digital{
+                                width: 50%;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -301,55 +318,49 @@
                 }
             }
         }
-        .info-video{
+        section.jabanusa__video{
             padding: 50px 10px;
-            .container__info__video{
+            .container__jabanusa__video{
                 width: 100%;
-                h1::after{
-                    left: 35%;
-                }
-                .row__info__video{
-                    margin-top: 10%;
-                    .box__info__video{
+                .row__jabanusa__video{
+                    .box__jabanusa__video{
                         width: 100%;
                     }
                 }
-                .row__webinar__info{
+            }
+        }
+        section.webinar__jurnalistik{
+            padding: 50px 10px;
+            .container__webinar__jurnalistik{
+                width: 100%;
+                .row__webinar__jurnalistik{
+                    width: 100%;
                     flex-direction: column;
-                    .box__webinar__info{
+                    .box__webinar__jurnalistik{
                         width: 100%;
-                        h1::after{
-                            left: 35%;
-                        }
-                        .box__webinar__info__flex{
-                            width:100%;
-                            flex-direction: column;
-                            .text__webinar__info{
-                                width: 100%;
-                                margin-top: 15%;
-                            }
-                            .box__webinar__info__flex__1{
-                                width: 100%;
-                            }
-                        }
+                        margin-top: 5%;
                     }
                 }
-                .row-digital-info{
-                    h1{
-                        margin-top: 10%;
-                    }
-                    .box__digital__info{
-                        flex-direction: column-reverse;
+            }
+        }
+        section.perpustakaan__digital{
+            padding:  50px 10px;
+            .container__perpustakaan__digital{
+                width: 100%;
+                .row__perpustakaan__digital{
+                    margin-top: 10%;
+                    .box__perpustakaan__digital{
                         width: 100%;
-                        img{
-                            display: block;
-                            object-fit: cover;
+                        .box__perpustakaan__digital__inside{
+                            flex-direction: column-reverse;
                             width: 100%;
-                        }
-                        .text__digital__info{
-                            width: 100%;
-                            button.digital__info{
-                                margin: 20px 0px;
+                            .text__perpustakaan__digital{
+                                width: 100%;
+                            }
+                            img{
+                                width: 100%;
+                                display: block;
+                                margin-top: 5%;
                             }
                         }
                     }
