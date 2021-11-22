@@ -100,28 +100,24 @@ $fontFamily : 'Open Sans', sans-serif;
                     font-family: $fontFamily;
                     }
                     a.list__link{
+                        
                         text-decoration: none;
                         color: #8D9D2D;
                     }
                     a.active{
-                        color: var(--header-text);
-                }
-                li.list__item::after{
-                    content: ' ';
-                    display: block;
-                    width: 0%;
-                    text-align: center;
-                    height: 2px;
-                    margin-top: 5px;
-                    background-color: var(--header-text);
-                }
-                li.list__item:hover::after{
-                    width: 100%;
-                    transition: 0.5s;
-                    a{
+                        position: relative;
+                        transition: 0.5s;
                         color: var(--header-text);
                     }
-                }
+                    a.active::after{
+                        content: ' ';
+                        display: block;
+                        width: 100%;
+                        position: absolute;
+                        height: 2px;
+                        transition: 0.5s ease-in;
+                        background-color: var(--header-text);
+                    }
                 li.list__item:hover a{
                     color: var(--header-text);
                     transition: 0.5s;

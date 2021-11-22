@@ -1,4 +1,4 @@
- var dots = [' ',' ',' ']
+  var dots = [' ',' ',' ']
   var swiper = new Swiper(".mySwiper", {
       spaceBetween: 80,
       speed:1500,
@@ -25,7 +25,6 @@
         }
       },
 });
-    
   // hambuger nav
 const hamburger = document.getElementById('hamburger');
 hamburger.addEventListener('click',function (e){
@@ -43,14 +42,7 @@ function BtnScrolll(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
-  // animmation
-AOS.init({
-  offset: 120, 
-  delay: 0, 
-  duration: 400, 
-  easing: 'ease',
-}); 
-  
+ 
 const section = document.querySelectorAll("section[id]");
 window.addEventListener("scroll", navScroll);
 function navScroll (){
