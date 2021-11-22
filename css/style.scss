@@ -105,7 +105,6 @@ $fontFamily : 'Open Sans', sans-serif;
                         color: #8D9D2D;
                     }
                     a.active{
-                        position: relative;
                         transition: 0.5s;
                         color: var(--header-text);
                     }
@@ -113,7 +112,6 @@ $fontFamily : 'Open Sans', sans-serif;
                         content: ' ';
                         display: block;
                         width: 100%;
-                        position: absolute;
                         height: 2px;
                         transition: 0.5s ease-in;
                         background-color: var(--header-text);
